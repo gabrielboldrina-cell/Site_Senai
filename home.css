@@ -1,0 +1,208 @@
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+}
+
+.site-navbar {
+    padding: 12px 20px;
+    background: linear-gradient(90deg, #020617, #111827);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.site-navbar .navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.08em;
+}
+
+.site-nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.site-nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 999px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.site-nav-link:hover,
+.site-nav-link:focus {
+    color: #38bdf8;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.site-navbar .btn-dropdown-custom {
+    color: white;
+    background: transparent;
+    border: none;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 999px;
+}
+
+.site-navbar .btn-dropdown-custom:hover,
+.site-navbar .btn-dropdown-custom:focus {
+    color: #38bdf8;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.site-navbar .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.site-navbar .dropdown-menu {
+    background: #111827;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 10px;
+    margin-top: 0;
+}
+
+.site-navbar .dropdown-item {
+    color: #cbd5e1;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.site-navbar .dropdown-item:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.site-cart-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.site-cart-link:hover,
+.site-cart-link:focus {
+    color: #38bdf8;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.page-layout {
+    display: flex;
+    align-items: flex-start;
+    min-height: calc(100vh - 60px);
+}
+
+.sidebar {
+    width: 260px;
+    flex-shrink: 0;
+    background: rgb(4, 15, 116);
+    min-height: calc(100vh - 60px);
+    padding: 20px 16px;
+    color: white;
+}
+
+.btn-toggle {
+    color: white;
+    width: 100%;
+    text-align: left;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+    background: transparent;
+    border: none;
+}
+
+.btn-toggle:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #00ff88;
+}
+
+.btn-toggle-nav a,
+.btn-toggle-nav button {
+    color: white;
+    padding: 6px 10px;
+    display: block;
+    border-radius: 8px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.btn-toggle-nav a:hover,
+.btn-toggle-nav button:hover {
+    color: #00ff88;
+}
+
+.content-area {
+    flex: 1;
+    padding: 30px 20px;
+}
+
+.produto-card {
+    background: #1e293b;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.25s, box-shadow 0.25s;
+    color: white;
+    width: 100%;
+}
+
+.produto-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.produto-card .card-img-top {
+    height: 220px;
+    object-fit: cover;
+    background: #0f172a;
+}
+
+.produto-card .card-body {
+    padding: 16px;
+}
+
+.produto-card .card-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #e2e8f0;
+    margin-bottom: 8px;
+}
+
+.produto-card .card-text {
+    font-size: 15px;
+    font-weight: 700;
+    color: #34d399;
+    margin-bottom: 12px;
+}
+
+.produto-card .btn-danger {
+    width: 100%;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 24px;
+}
+
+.sidebar .btn-toggle-nav .btn.btn-link.p-0,
+.sidebar .btn-toggle-nav .btn.btn.p-0 {
+    color: white;
+}
+
+.sidebar .border-top.my-3 {
+    border-color: rgba(255, 255, 255, 0.15) !important;
+}

@@ -15,168 +15,7 @@
     <script src="sweeatlert.js"></script>
     <link rel="icon" type="image/png" href="data/branding/foto1.jpg">
 
-    <style>
-        body {
-            background: linear-gradient(135deg, #0f172a, #1e293b);
-            color: white;
-            font-family: 'Segoe UI', sans-serif;
-        }
-        .site-navbar {
-            padding: 12px 20px;
-            background: linear-gradient(90deg, #020617, #111827);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-        }
-        .site-navbar .navbar-brand {
-            font-weight: 700;
-            font-size: 1.5rem;
-            letter-spacing: 0.08em;
-        }
-        .site-nav-actions {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-        .site-nav-link {
-            color: white;
-            text-decoration: none;
-            padding: 8px 14px;
-            border-radius: 999px;
-            transition: background-color 0.2s ease, color 0.2s ease;
-        }
-        .site-nav-link:hover,
-        .site-nav-link:focus {
-            color: #38bdf8;
-            background: rgba(255, 255, 255, 0.08);
-        }
-        .site-navbar .btn-dropdown-custom {
-            color: white;
-            background: transparent;
-            border: none;
-            font-weight: 500;
-            padding: 8px 14px;
-            border-radius: 999px;
-        }
-        .site-navbar .btn-dropdown-custom:hover,
-        .site-navbar .btn-dropdown-custom:focus {
-            color: #38bdf8;
-            background: rgba(255, 255, 255, 0.08);
-        }
-        .site-navbar .dropdown:hover .dropdown-menu {
-            display: block;
-            margin-top: 0;
-        }
-        .site-navbar .dropdown-menu {
-            background: #111827;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 14px;
-            padding: 10px;
-            margin-top: 0;
-        }
-        .site-navbar .dropdown-item {
-            color: #cbd5e1;
-            border-radius: 8px;
-            transition: 0.2s;
-        }
-        .site-navbar .dropdown-item:hover {
-            color: white;
-            background: rgba(255, 255, 255, 0.08);
-        }
-        .site-cart-link {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-            padding: 8px 14px;
-            border-radius: 999px;
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            transition: background-color 0.2s ease, color 0.2s ease;
-        }
-        .site-cart-link:hover,
-        .site-cart-link:focus {
-            color: #38bdf8;
-            background: rgba(255, 255, 255, 0.08);
-        }
-
-        .sidebar {
-            width: 280px;
-            background: #0f172a;
-            border-right: 1px solid rgba(255, 255, 255, 0.05);
-            min-height: 100vh;
-        }
-
-        .sidebar h5 {
-            color: #aaa;
-            font-size: 14px;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .btn-toggle {
-            color: #e5e7eb;
-            width: 100%;
-            text-align: left;
-            font-weight: 500;
-            padding: 10px;
-            border-radius: 10px;
-            transition: 0.3s;
-        }
-
-        .btn-toggle:hover {
-            background: rgba(255, 255, 255, 0.05);
-            color: #00ff88;
-        }
-
-        .btn-toggle-nav a {
-            color: #9ca3af;
-            padding: 6px 10px;
-            display: block;
-            border-radius: 8px;
-            transition: 0.3s;
-            font-size: 14px;
-        }
-
-        .produto-img {
-            width: 60px;
-            height: 60px;
-            object-fit: cover;
-            border-radius: 10px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        
-        td {
-            padding: 15px 10px;
-            text-align: left;
-        }
-
-        tbody tr {
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-            transition: 0.3s;
-        }
-
-        tbody tr:hover {
-            background: rgba(255, 255, 255, 0.04);
-        }
-        .total-box p {
-            font-size: 18px;
-            color: #fdf8f8;
-            margin-bottom: 15px;
-        }
-
-        .total-box span {
-            font-size: 28px;
-            font-weight: bold;
-        }
-        .carrinho-icon {
-            flex-grow: 1;
-            padding:  80px;
-        }
-    </style>
+    <link rel="stylesheet" href="carinho.css">
 </head>
 
 
@@ -215,8 +54,7 @@
                             <main class="d-flex flex-nowrap">
                                 <h1 class="visually-hidden">Sidebars examples</h1>
                                 <div class="b-example-divider b-example-vr"></div>
-                                <div class="flex-shrink-0 p-3"
-                                    style="width: 280px; background-color:rgb(4, 15, 116); color:rgb(137, 17, 188); ">
+                                <div class="flex-shrink-0 p-3" id="carinho-inline-001">
                                     <a
                                         class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom">
                                         <svg class="bi pe-none me-2" width="30" height="24" aria-hidden="true">
@@ -225,26 +63,26 @@
                                     </a>
                                     <ul class="list-unstyled ps-0">
                                         <li class="mb-1">
-                                            <button style="color:white;"
+                                            <button
                                                 class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
                                                 data-bs-toggle="collapse" data-bs-target="#home-collapse"
-                                                aria-expanded="true">
+                                                aria-expanded="true" id="carinho-inline-002">
                                                 Gênero
                                             </button>
                                             <div class="collapse show" id="home-collapse">
                                                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                                     <li>
-                                                        <a href="###" style="color:white;"
-                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">
+                                                        <a href="###"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded" id="carinho-inline-003">
                                                             Masculino</a>
                                                     </li>
                                                     <li>
-                                                        <a href="###" style="color:white;"
-                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Feminino</a>
+                                                        <a href="###"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded" id="carinho-inline-004">Feminino</a>
                                                     </li>
                                                     <li>
-                                                        <a href="###" style="color:white;"
-                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Unissex</a>
+                                                        <a href="###"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded" id="carinho-inline-005">Unissex</a>
                                                     </li>
 
                                                 </ul>
@@ -253,80 +91,80 @@
 
 
                                         <li class="mb-1">
-                                            <button style="color:white;"
+                                            <button
                                                 class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
                                                 data-bs-toggle="collapse" data-bs-target="#França"
-                                                aria-expanded="false">
+                                                aria-expanded="false" id="carinho-inline-006">
                                                 🛍 Tipo de Produto
                                             </button>
                                             <div class="collapse" id="França">
                                                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                                     <li>
-                                                        <a href="###" style="color:white;"
-                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Acessorios
+                                                        <a href="###"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded" id="carinho-inline-007">Acessorios
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="###" style="color:white;"
-                                                            lass="link-body-emphasis d-inline-flex text-decoration-none rounded">Calçados</a>
+                                                        <a href="###"
+                                                            lass="link-body-emphasis d-inline-flex text-decoration-none rounded" id="carinho-inline-008">Calçados</a>
                                                     </li>
                                                     <li>
-                                                        <a href="###" style="color:white;"
-                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Roupas</a>
+                                                        <a href="###"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded" id="carinho-inline-009">Roupas</a>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </li>
                                         <li class="mb-1">
-                                            <button style="color:white;"
+                                            <button
                                                 class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
                                                 data-bs-toggle="collapse" data-bs-target="#inglaterra"
-                                                aria-expanded="false">
+                                                aria-expanded="false" id="carinho-inline-010">
                                                 💰 Preço
                                             </button>
                                             <div class="collapse" id="inglaterra">
                                                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                                     <li>
-                                                        <a href="###" style="color:white;"
-                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">R$100
+                                                        <a href="###"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded" id="carinho-inline-011">R$100
                                                             - R$200
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="###" style="color:white;"
-                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">R$200
+                                                        <a href="###"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded" id="carinho-inline-012">R$200
                                                             - R$400</a>
                                                     </li>
                                                     <li>
-                                                        <a href="###" style="color:white;"
-                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">R$400
+                                                        <a href="###"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded" id="carinho-inline-013">R$400
                                                             - R$500</a>
                                                     </li>
                                                     <li>
-                                                        <a href="###" style="color:white;"
-                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Acima
+                                                        <a href="###"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded" id="carinho-inline-014">Acima
                                                             de R$500</a>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </li>
                                         <li class="mb-1">
-                                            <button style="color:white;"
+                                            <button
                                                 class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
                                                 data-bs-toggle="collapse" data-bs-target="#Esportes"
-                                                aria-expanded="false">
+                                                aria-expanded="false" id="carinho-inline-015">
                                                 ⚽ Esportes
                                             </button>
                                             <div class="collapse" id="Esportes">
                                                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                                     <li>
-                                                        <a href="###" style="color:white;"
-                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Casual
+                                                        <a href="###"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded" id="carinho-inline-016">Casual
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="###" style="color:white;"
-                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Futebol
+                                                        <a href="###"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded" id="carinho-inline-017">Futebol
                                                         </a>
                                                     </li>
 
