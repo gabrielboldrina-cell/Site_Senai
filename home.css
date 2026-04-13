@@ -204,5 +204,49 @@ body {
 }
 
 .sidebar .border-top.my-3 {
-    border-color: rgba(255, 255, 255, 0.15) !important;
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* responsive */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    html,
+    body {
+        height: auto;
+        overflow-y: auto;
+    }
+
+    .page-layout {
+        align-items: flex-start;
+        min-height: 0;
+        height: auto;
+        overflow: visible;
+    }
+
+    .sidebar {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        min-height: 340vh;
+        max-height: none;
+        overflow-y: auto;
+        align-self: flex-start;
+        flex-shrink: 0;
+    }
+
+    .content-area {
+        min-height: auto;
+        height: auto;
+        max-height: none;
+        overflow: visible;
+        padding-bottom: 220px;
+    }
+
+    .cards-grid {
+        height: auto;
+        max-height: none;
+        overflow: visible;
+        padding-bottom: 80px;
+    }
+
 }
