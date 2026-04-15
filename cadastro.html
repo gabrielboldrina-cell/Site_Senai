@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=[device-width], initial-scale=1.0">
+    <title>Login</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="icon" type="image/png" href="data/branding/foto1.jpg">
+    <link rel="stylesheet" href="login.css">
+    <script src="cadastro.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark site-navbar" aria-label="Main navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="GL Street.html">Nike</a>
+            <div class="ms-auto site-nav-actions">
+                <a class="site-nav-link" href="GL Street.html">Inicio</a>
+                <a class="site-nav-link" href="home.html">Catalogo</a>
+                <div class="dropdown">
+                    <button class="btn btn-dropdown-custom dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Categorias</button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="home.html">Selecao Brasileira</a></li>
+                        <li><a class="dropdown-item" href="home.html">Camisas</a></li>
+                        <li><a class="dropdown-item" href="home.html">Tenis</a></li>
+                        <li><a class="dropdown-item" href="home.html">Chuteiras</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <main class="container">
+
+            <h1>Login GL Street</h1>
+
+            <div class="input-box">
+                <input type="email" placeholder="Nome completo" required>
+                <i class='bx bx-bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="email" placeholder="Email" required>
+                <i class='bx bx-bxs-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" placeholder="Usuário" required>
+                <i class='bx bx-bxs-lock-alt'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Senha" required>
+                <i class='bx bx-bxs-lock-alt'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder=" Confirmar Senha" required>
+                <i class='bx bx-bxs-lock-alt'></i>
+            </div>
+            <button id="btnCadastro" class="login" type="submit">Cadastrar</button>
+
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
