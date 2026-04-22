@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=[device-width], initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GL Street</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -13,68 +13,147 @@
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="home.js"></script>
-    <link rel="icon" type="image/png" href="data/branding/foto1.jpg">
+    <link rel="icon" type="image/png" href="data/branding/capa.png">
+    <link rel="stylesheet" href="theme.css">
     <link rel="stylesheet" href="GL Street.css">
 </head>
 
 <body>
-    <div class="row">
+    <header class="promo-strip">
+        <div class="container promo-strip-content">
+            <a class="promo-strip-link" href="home.html">Frete gratis acima de R$299</a>
+            <a class="promo-strip-link" href="home.html">Troca em ate 7 dias</a>
+            <a class="promo-strip-link" href="login.html">Programa de membros GL+</a>
+        </div>
+    </header>
 
-        <main>
-    <nav class="navbar navbar-dark site-navbar" aria-label="Main navbar">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark site-navbar" aria-label="Main navbar">
+        <div class="container">
             <a class="navbar-brand" href="GL Street.html">GL Street</a>
-            <div class="ms-auto site-nav-actions">
-                <a class="site-nav-link" href="GL Street.html">Inicio</a>
-                <a class="site-nav-link" href="home.html">Catalogo</a>
-                <div class="dropdown">
-                    <button class="btn btn-dropdown-custom dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">Categorias</button>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="home.html">Selecao Brasileira</a></li>
-                        <li><a class="dropdown-item" href="home.html">Camisas</a></li>
-                        <li><a class="dropdown-item" href="home.html">Tenis</a></li>
-                        <li><a class="dropdown-item" href="home.html">Chuteiras</a></li>
-                    </ul>
-                </div>
-                <a class="site-nav-link" href="login.html">Login</a>
-                <a class="site-nav-link" href="cadastro.html">Cadastra-se</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Abrir navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                    <li class="nav-item"><a class="nav-link site-nav-link" href="GL Street.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link site-nav-link" href="home.html">Catalogo</a></li>
+                    <li class="nav-item dropdown">
+                        <button class="btn btn-dropdown-custom dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Categorias</button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="home.html">Selecao Brasileira</a></li>
+                            <li><a class="dropdown-item" href="home.html">Camisas</a></li>
+                            <li><a class="dropdown-item" href="home.html">Tenis</a></li>
+                            <li><a class="dropdown-item" href="home.html">Chuteiras</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link site-nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link site-nav-link nav-pill" href="cadastro.html">Cadastra-se</a></li>
+                </ul>
             </div>
         </div>
     </nav>
-    </div>
 
-    </main>
-    <div class="container-fluid p-0">
-        <div class="row inicial">
-            <div class="col-md-1 col-lg"></div>
+    <main>
+        <section class="hero-section">
+            <div id="heroCarousel" class="carousel slide carousel-fade hero-carousel" data-bs-ride="carousel"
+                data-bs-interval="9000" data-bs-pause="false">
+                <div class="carousel-indicators hero-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
 
-            <div class="col-sm-12 col-md-10 col-lg-11">
-                <div id="carouselExampleFade" class="carousel slide carousel-fade carousel-espaço"
-                    data-bs-ride="carousel" data-bs-interval="10000" data-bs-pause="false">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="data/banners/foto4.jpg" class="d-block w-100 carousel-img" alt="Imagem 1">
+                <div class="carousel-inner hero-carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="data/banners/foto4.jpg" class="d-block w-100 hero-image"
+                            alt="Destaque da colecao GL Street">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="data/banners/foto3.jpg" class="d-block w-100 hero-image"
+                            alt="Jogador com uniforme GL Street">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="data/banners/foto2.jpg" class="d-block w-100 hero-image"
+                            alt="Detalhe de camisa GL Street">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Proximo</span>
+                </button>
+            </div>
+
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-content">
+                <div class="row g-4 align-items-end">
+                    <div class="col-lg-7">
+                        <p class="hero-kicker">Colecao 2026</p>
+                        <h1 class="hero-title">A energia do estadio, o estilo da rua.</h1>
+                        <p class="hero-subtitle">
+                            Uma abertura forte, com destaque principal, ritmo visual e chamada direta para compra.
+                            Inspirada na ideia do SPFC, mas com a identidade da GL Street.
+                        </p>
+                        <div class="hero-actions">
+                            <a class="btn btn-hero-primary" href="home.html">Ver catalogo</a>
+                            <a class="btn btn-hero-secondary" href="home.html">Explorar categorias</a>
                         </div>
-                        <div class="carousel-item">
-                            <img src="data/banners/foto3.jpg" class="d-block w-100 carousel-img" alt="Imagem 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="data/banners/foto2.jpg" class="d-block w-100 carousel-img" alt="Imagem 3">
-                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <aside class="drop-card" aria-label="Proximo destaque da loja">
+                            <p class="drop-label">Proximo Drop</p>
+                            <h2 class="drop-title">Linha Matchday Street</h2>
+                            <div class="drop-highlight">Camisas, tenis e acessorios em edicao limitada.</div>
+                            <ul class="drop-meta">
+                                <li>25/04/2026 - Sabado - 21:00</li>
+                                <li>Lancamento online e retirada na loja</li>
+                            </ul>
+                            <a class="drop-link" href="home.html">Quero receber aviso</a>
+                        </aside>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="col-md-1 col-lg"></div>
-
-        </div>
-    </div>
-
+        <section class="highlights">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <article class="highlight-card">
+                            <p class="highlight-tag">Destaque</p>
+                            <h3>Nova camisa retro GL Street</h3>
+                            <p>Design classico com tecidos atuais para usar no dia de jogo e no dia a dia.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="highlight-card">
+                            <p class="highlight-tag">Tendencia</p>
+                            <h3>Tenis street performance</h3>
+                            <p>Conforto, grip e visual forte para quadra, treino e rotina urbana.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="highlight-card">
+                            <p class="highlight-tag">Colecao</p>
+                            <h3>Acessorios oficiais</h3>
+                            <p>Bones, mochilas e detalhes que completam o look com identidade GL Street.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
-
-
-

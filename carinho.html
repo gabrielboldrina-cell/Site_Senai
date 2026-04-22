@@ -1,261 +1,215 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Carrinho </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"/><script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="sweeatlert.js"></script>
-    <link rel="icon" type="image/png" href="data/branding/foto1.jpg">
-
-    <link rel="stylesheet" href="carinho.css">
-</head>
-
-
-
-<body>
-        <nav class="navbar navbar-dark site-navbar" aria-label="Main navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="sweeatalert.html">Nike</a>
-            <div class="ms-auto site-nav-actions">
-                <a class="site-nav-link" href="sweeatalert.html">Inicio</a>
-                <a class="site-nav-link" href="home.html">Catalogo</a>
-                <div class="dropdown">
-                    <button class="btn btn-dropdown-custom dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">Categorias</button>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="home.html">Selecao Brasileira</a></li>
-                        <li><a class="dropdown-item" href="home.html">Camisas</a></li>
-                        <li><a class="dropdown-item" href="home.html">Tenis</a></li>
-                        <li><a class="dropdown-item" href="home.html">Chuteiras</a></li>
-                    </ul>
-                </div>
-                <a class="site-nav-link" href="compra.html">Pagamento</a>
-                <a href="carinho.html" class="site-cart-link">Carrinho <span id="contador"></span></a>
-            </div>
-        </div>
+    <link rel="icon" type="image/png" href="data/branding/capa.png" />
+    <link rel="stylesheet" href="theme.css" />
+    <link rel="stylesheet" href="carinho.css" />
+    <script src="filtro.js"></script>
+    <script src="carrinho.js"></script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar site-navbar d-flex align-items-center justify-content-between">
+      <a class="navbar-brand" href="GL Street.html">GL Street</a>
+      <div class="d-flex align-items-center gap-2">
+        <a href="home.html" class="site-nav-link nav-link-custom">Início</a>
+        <a href="home.html" class="site-nav-link nav-link-custom">Catálogo</a>
+        <a href="#" class="site-nav-link nav-link-custom">Categorias</a>
+        <a href="compra.html" class="site-nav-link nav-link-custom">Pagamento</a>
+        <a href="#" class="site-cart-link cart-btn">
+          <i class="bi bi-bag"></i>
+          Carrinho
+          <span class="cart-badge">2</span>
+        </a>
+      </div>
     </nav>
 
+    <div class="page-wrap">
+      <!-- SIDEBAR -->
+      <div class="sidebar">
+        <p class="sidebar-section-title">Filtros</p>
+        <button class="sidebar-toggle">
+          <i class="bi bi-person"></i> Gênero
+        </button>
+        <ul class="sidebar-sub">
+          <li><button>Masculino</button></li>
+          <li><button>Feminino</button></li>
+        </ul>
 
-    <div class="d-flex">
-        <nav>
-            <main class="d-flex">
-                <div class="sidebar">
-                    <main class="d-flex flex-nowrap">
-                        <div class="sidebar">
+        <button class="sidebar-toggle mt-2">
+          <i class="bi bi-bag"></i> Tipo de Produto
+        </button>
+        <ul class="sidebar-sub">
+          <li><button>Todos</button></li>
+          <li><button>Seleção Brasileira</button></li>
+          <li><button>Camisas</button></li>
+          <li><button>Tênis</button></li>
+        </ul>
 
-                            <main class="d-flex flex-nowrap">
-                                <h1 class="visually-hidden">Sidebars examples</h1>
-                                <div class="b-example-divider b-example-vr"></div>
-                                <div class="flex-shrink-0 p-3" id="carinho-inline-001">
-                                    <a
-                                        class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom">
-                                        <svg class="bi pe-none me-2" width="30" height="24" aria-hidden="true">
+        <button class="sidebar-toggle mt-2">
+          <i class="bi bi-dribbble"></i> Esportes
+        </button>
+        <ul class="sidebar-sub">
+          <li><button>Chuteira</button></li>
+        </ul>
 
-                                        </svg>
-                                    </a>
-                                    <ul class="list-unstyled ps-0">
-                                        <li class="mb-1">
-                                            <button
-                                                class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                                                data-bs-toggle="collapse" data-bs-target="#home-collapse"
-                                                aria-expanded="true" id="carinho-inline-002">
-                                                Gênero
-                                            </button>
-                                            <div class="collapse show" id="home-collapse">
-                                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                                    <li>
-                                                        <a href="###"
-                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded" id="carinho-inline-003">
-                                                            Masculino</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="###"
-                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded" id="carinho-inline-004">Feminino</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="###"
-                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded" id="carinho-inline-005">Unissex</a>
-                                                    </li>
+        <hr class="sidebar-divider" />
 
-                                                </ul>
-                                            </div>
-                                        </li>
+        <button class="sidebar-toggle">
+          <i class="bi bi-person-circle"></i> Conta
+        </button>
+        <ul class="sidebar-sub">
+          <li><button>Configurações</button></li>
+          <li><button>Trocar de Conta</button></li>
+        </ul>
+      </div>
 
-
-                                        <li class="mb-1">
-                                            <button
-                                                class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                                                data-bs-toggle="collapse" data-bs-target="#França"
-                                                aria-expanded="false" id="carinho-inline-006">
-                                                🛍 Tipo de Produto
-                                            </button>
-                                            <div class="collapse" id="França">
-                                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                                    <li>
-                                                        <a href="###"
-                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded" id="carinho-inline-007">Acessorios
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="###"
-                                                            lass="link-body-emphasis d-inline-flex text-decoration-none rounded" id="carinho-inline-008">Calçados</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="###"
-                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded" id="carinho-inline-009">Roupas</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="mb-1">
-                                            <button
-                                                class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                                                data-bs-toggle="collapse" data-bs-target="#inglaterra"
-                                                aria-expanded="false" id="carinho-inline-010">
-                                                💰 Preço
-                                            </button>
-                                            <div class="collapse" id="inglaterra">
-                                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                                    <li>
-                                                        <a href="###"
-                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded" id="carinho-inline-011">R$100
-                                                            - R$200
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="###"
-                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded" id="carinho-inline-012">R$200
-                                                            - R$400</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="###"
-                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded" id="carinho-inline-013">R$400
-                                                            - R$500</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="###"
-                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded" id="carinho-inline-014">Acima
-                                                            de R$500</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="mb-1">
-                                            <button
-                                                class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                                                data-bs-toggle="collapse" data-bs-target="#Esportes"
-                                                aria-expanded="false" id="carinho-inline-015">
-                                                ⚽ Esportes
-                                            </button>
-                                            <div class="collapse" id="Esportes">
-                                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                                    <li>
-                                                        <a href="###"
-                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded" id="carinho-inline-016">Casual
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="###"
-                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded" id="carinho-inline-017">Futebol
-                                                        </a>
-                                                    </li>
-
-
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="border-top my-3"></li>
-                                        <li class="mb-1">
-                                            <button
-                                                class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                                                data-bs-toggle="collapse" data-bs-target="#account-collapse"
-                                                aria-expanded="false">
-                                                Conta ✔
-                                            </button>
-                                            <div class="collapse" id="account-collapse">
-                                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                                    <li>
-                                                        <a href="config.html"
-                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Configutações</a>
-                                                    </li>
-
-                                                    <li>
-                                                        <a href="trocardeconta.html"
-                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Trocar
-                                                            de Conta</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </main>
-                    </main>
-                </div>
-            </main>
-        </nav>
-
-
-        <div class="carrinho-icon">
-            <h2> Meu Carrinho</h2>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Produto</th>
-                        <th>Preço</th>
-                        <th>Qtd</th>
-                        <th>Total</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="produto-nome">
-                                <img src="data/selecao/foto5.jpg" class="produto-img" alt="...">
-                               Camisa Brasil Jordan II 2026/27 Jogador Masculina
-                            </div>
-                        </td>
-                        <td>R$ 729,99</td>
-
-                        <td>1x</td>
-                        <td>R$ 729,99</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="produto-nome">
-                                <img src="data/selecao/foto6.png" class="produto-img" alt="...">
-                                Camisa Brasil Jordan II 2026/27 Torcedora Pro Feminina
-                            </div>
-                        </td>
-                        <td>R$ 429,99</td>
-                        <td>2x</td>
-                        <td>R$ 859,98</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="total-box">
-                <p>Total: <span>R$ 1.589,97 </span></p>
-                <form action="compra.html">
-                <button class="btn-finalizar">Finalizar Compra</button></form>
-            </div>
+      <div class="main-content">
+        <div class="page-header">
+          <h1 class="page-title">Meu Carrinho</h1>
+          <span class="item-count">2 itens</span>
         </div>
 
+        <div class="cart-layout">
+          <div class="cart-items">
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img
+                  src="data/selecao/foto5.jpg"
+                  alt="Camisa Brasil Jordan II 2026/27 Jogador Masculina"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-info">
+                <div class="product-tag">Seleção Brasileira</div>
+                <p class="product-name">
+                  Camisa Brasil Jordan II 2026/27 Jogador Masculina
+                </p>
+                <p class="product-price">R$ 729,99</p>
+              </div>
+              <div class="product-actions">
+                <button class="btn-remove" title="Remover">
+                  <i class="bi bi-trash"></i>
+                </button>
+                <div class="qty-control">
+                  <button class="qty-btn" onclick="changeQty(this, -1)">
+                    −
+                  </button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-btn" onclick="changeQty(this, 1)">
+                    +
+                  </button>
+                </div>
+                <div class="product-total">
+                  <span>Total</span>
+                  R$ 729,99
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img
+                  src="data/selecao/foto6.png"
+                  alt="Camisa Brasil Jordan II 2026/27 Torcedora Pro Feminina"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-info">
+                <div class="product-tag">Seleção Brasileira</div>
+                <p class="product-name">
+                  Camisa Brasil Jordan II 2026/27 Torcedora Pro Feminina
+                </p>
+                <p class="product-price">R$ 429,99</p>
+              </div>
+              <div class="product-actions">
+                <button class="btn-remove" title="Remover">
+                  <i class="bi bi-trash"></i>
+                </button>
+                <div class="qty-control">
+                  <button class="qty-btn" onclick="changeQty(this, -1)">
+                    −
+                  </button>
+                  <span class="qty-value">2</span>
+                  <button class="qty-btn" onclick="changeQty(this, 1)">
+                    +
+                  </button>
+                </div>
+                <div class="product-total">
+                  <span>Total</span>
+                  R$ 859,98
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="summary-panel">
+            <p class="summary-title">Resumo do Pedido</p>
+
+            <div class="summary-line">
+              <span class="label">Subtotal (3 itens)</span>
+              <span class="value">R$ 1.589,97</span>
+            </div>
+            <div class="summary-line">
+              <span class="label">Frete</span>
+              <span class="value free"
+                ><i class="bi bi-check-circle-fill me-1"></i>Grátis</span
+              >
+            </div>
+            <div class="summary-line">
+              <span class="label">Desconto</span>
+              <span class="value" style="color: var(--accent2)">— R$ 0,00</span>
+            </div>
+
+            <div class="coupon-row">
+              <input
+                class="coupon-input"
+                type="text"
+                placeholder="Código de cupom"
+              />
+              <button class="coupon-btn">Aplicar</button>
+            </div>
+
+            <div class="summary-total">
+              <span class="total-label">Total</span>
+              <span class="total-value">R$ 1.589,97</span>
+            </div>
+
+            <button
+              class="btn-checkout"
+              onclick="window.location = 'compra.html'"
+            >
+              <i class="bi bi-lightning-charge-fill"></i>
+              Finalizar Compra
+            </button>
+            <button class="btn-continue">
+              <i class="bi bi-arrow-left"></i>
+              Continuar Comprando
+            </button>
+
+            <div class="security-note">
+              <i class="bi bi-shield-check"></i>
+              Pagamento 100% seguro e criptografado
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-
-</body>
-
-</html>
-    <script src="filtro.js"></script>
+    
+  </body>
 </html>
 
