@@ -45,6 +45,8 @@ body {
 }
 
 .site-navbar {
+    position: relative;
+    z-index: 1100;
     padding: 12px 20px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.94), rgba(0, 0, 0, 0.74));
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -107,6 +109,7 @@ body {
 }
 
 .site-navbar .dropdown-menu {
+    z-index: 1110;
     margin-top: 0;
     padding: 10px;
     background: var(--gl-surface);

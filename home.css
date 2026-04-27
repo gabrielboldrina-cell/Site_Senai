@@ -14,7 +14,7 @@ body {
     flex-shrink: 0;
     position: sticky;
     top: 72px;
-    height: calc(100vh - 72px);
+    height: calc(120vh - 72px);
     overflow-y: auto;
     background: linear-gradient(180deg, var(--gl-surface-soft), #121319 60%, #0d0e13 100%);
     border-right: 1px solid var(--gl-border);
