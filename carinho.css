@@ -45,15 +45,6 @@ body::after {
     z-index: 100;
 }
 
-.navbar-brand {
-    font-size: 1.7rem;
-    letter-spacing: 0.14em;
-    color: #ffffff !important;
-    text-decoration: none;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
 .nav-link-custom {
     color: var(--gl-text-muted);
     text-decoration: none;

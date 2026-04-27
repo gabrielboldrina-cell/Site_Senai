@@ -1,67 +1,55 @@
-$(document).ready(function () {
+﻿$(document).ready(function () {
 
     $("#btn16").click(function () {
 
-        $(".MeuBotao").hide();
-
         Swal.fire({
             title: "O produto foi adicionado ao carrinho!",
-            text: "Seu pedido está no carrinho",
+            text: "Seu pedido estÃ¡ no carrinho",
             icon: "success"
         });
 
     });
     $("#btnclub").click(function () {
 
-        $(".MeuBotao").hide();
-
         Swal.fire({
             title: "O produto foi adicionado ao carrinho!",
-            text: "Seu pedido está no carrinho",
+            text: "Seu pedido estÃ¡ no carrinho",
             icon: "success"
         });
 
     });
     $("#btnike").click(function () {
 
-        $(".MeuBotao").hide();
-
         Swal.fire({
             title: "O produto foi adicionado ao carrinho!",
-            text: "Seu pedido está no carrinho",
+            text: "Seu pedido estÃ¡ no carrinho",
             icon: "success"
         });
 
     });
     $("#btn15").click(function () {
 
-        $(".MeuBotao").hide();
-
         Swal.fire({
             title: "O produto foi adicionado ao carrinho!",
-            text: "Seu pedido está no carrinho",
+            text: "Seu pedido estÃ¡ no carrinho",
             icon: "success"
         });
 
     });
     $("#btn321").click(function () {
 
-        $(".MeuBotao").hide();
-
         Swal.fire({
             title: "O produto foi adicionado ao carrinho!",
-            text: "Seu pedido está no carrinho",
+            text: "Seu pedido estÃ¡ no carrinho",
             icon: "success"
         });
 
     });
     $("#btn423").click(function () {
 
-        $(".MeuBotao").hide();
-
         Swal.fire({
             title: "O produto foi adicionado ao carrinho!",
-            text: "Seu pedido está no carrinho",
+            text: "Seu pedido estÃ¡ no carrinho",
             icon: "success"
         });
 
@@ -75,11 +63,9 @@ $(document).ready(function () {
 
     $("#btnjogador").click(function () {
 
-        $(".MeuBotao").hide();
-
         Swal.fire({
             title: "O produto foi adicionado ao carrinho!",
-            text: "Seu pedido está no carrinho",
+            text: "Seu pedido estÃ¡ no carrinho",
             icon: "success"
         });
 
@@ -87,11 +73,9 @@ $(document).ready(function () {
 
     $("#btndf").click(function () {
 
-        $(".MeuBotao").hide();
-
         Swal.fire({
             title: "O produto foi adicionado ao carrinho!",
-            text: "Seu pedido está no carrinho",
+            text: "Seu pedido estÃ¡ no carrinho",
             icon: "success"
         });
 
@@ -100,11 +84,9 @@ $(document).ready(function () {
 
     $("#btndrifit").click(function () {
 
-        $(".MeuBotao").hide();
-
         Swal.fire({
             title: "O produto foi adicionado ao carrinho!",
-            text: "Seu pedido está no carrinho",
+            text: "Seu pedido estÃ¡ no carrinho",
             icon: "success"
         });
 
@@ -114,11 +96,9 @@ $(document).ready(function () {
 
     $("#btndesenho").click(function () {
 
-        $(".MeuBotao").hide();
-
         Swal.fire({
             title: "O produto foi adicionado ao carrinho!",
-            text: "Seu pedido está no carrinho",
+            text: "Seu pedido estÃ¡ no carrinho",
             icon: "success"
         });
 
@@ -128,11 +108,9 @@ $(document).ready(function () {
 
     $("#btnfiesta").click(function () {
 
-        $(".MeuBotao").hide();
-
         Swal.fire({
             title: "O produto foi adicionado ao carrinho!",
-            text: "Seu pedido está no carrinho",
+            text: "Seu pedido estÃ¡ no carrinho",
             icon: "success"
         });
 
@@ -140,11 +118,9 @@ $(document).ready(function () {
 
     $("#btnestatua").click(function () {
 
-        $(".MeuBotao").hide();
-
         Swal.fire({
             title: "O produto foi adicionado ao carrinho!",
-            text: "Seu pedido está no carrinho",
+            text: "Seu pedido estÃ¡ no carrinho",
             icon: "success"
         });
 
@@ -155,11 +131,9 @@ $(document).ready(function () {
 
     $("#btntenis").click(function () {
 
-        $(".MeuBotao").hide();
-
         Swal.fire({
             title: "O produto foi adicionado ao carrinho!",
-            text: "Seu pedido está no carrinho",
+            text: "Seu pedido estÃ¡ no carrinho",
             icon: "success"
         });
 
@@ -170,11 +144,9 @@ $(document).ready(function () {
 
     $("#btnairzoom").click(function () {
 
-        $(".MeuBotao").hide();
-
         Swal.fire({
             title: "O produto foi adicionado ao carrinho!",
-            text: "Seu pedido está no carrinho",
+            text: "Seu pedido estÃ¡ no carrinho",
             icon: "success"
         });
 
@@ -184,11 +156,9 @@ $(document).ready(function () {
 
     $("#btnAlphafly").click(function () {
 
-        $(".MeuBotao").hide();
-
         Swal.fire({
             title: "O produto foi adicionado ao carrinho!",
-            text: "Seu pedido está no carrinho",
+            text: "Seu pedido estÃ¡ no carrinho",
             icon: "success"
         });
 
@@ -198,11 +168,9 @@ $(document).ready(function () {
 
     $("#btnvapor").click(function () {
 
-        $(".MeuBotao").hide();
-
         Swal.fire({
             title: "O produto foi adicionado ao carrinho!",
-            text: "Seu pedido está no carrinho",
+            text: "Seu pedido estÃ¡ no carrinho",
             icon: "success"
         });
 
@@ -213,11 +181,9 @@ $(document).ready(function () {
 
     $("#btnstructure").click(function () {
 
-        $(".MeuBotao").hide();
-
         Swal.fire({
             title: "O produto foi adicionado ao carrinho!",
-            text: "Seu pedido está no carrinho",
+            text: "Seu pedido estÃ¡ no carrinho",
             icon: "success"
         });
 
@@ -226,11 +192,9 @@ $(document).ready(function () {
     });
     $("#btnpegasus").click(function () {
 
-        $(".MeuBotao").hide();
-
         Swal.fire({
             title: "O produto foi adicionado ao carrinho!",
-            text: "Seu pedido está no carrinho",
+            text: "Seu pedido estÃ¡ no carrinho",
             icon: "success"
         });
 
@@ -243,11 +207,9 @@ $(document).ready(function () {
 
     $("#btnJordan").click(function () {
 
-        $(".MeuBotao").hide();
-
         Swal.fire({
             title: "O produto foi adicionado ao carrinho!",
-            text: "Seu pedido está no carrinho",
+            text: "Seu pedido estÃ¡ no carrinho",
             icon: "success"
         });
 
@@ -257,11 +219,9 @@ $(document).ready(function () {
 
     $("#btnFeminina").click(function () {
 
-        $(".MeuBotao").hide();
-
         Swal.fire({
             title: "O produto foi adicionado ao carrinho!",
-            text: "Seu pedido está no carrinho",
+            text: "Seu pedido estÃ¡ no carrinho",
             icon: "success"
         });
 
@@ -271,11 +231,9 @@ $(document).ready(function () {
 
     $("#btn2026").click(function () {
 
-        $(".MeuBotao").hide();
-
         Swal.fire({
             title: "O produto foi adicionado ao carrinho!",
-            text: "Seu pedido está no carrinho",
+            text: "Seu pedido estÃ¡ no carrinho",
             icon: "success"
         });
 
@@ -284,11 +242,9 @@ $(document).ready(function () {
     });
     $("#btnMasculina").click(function () {
 
-        $(".MeuBotao").hide();
-
         Swal.fire({
             title: "O produto foi adicionado ao carrinho!",
-            text: "Seu pedido está no carrinho",
+            text: "Seu pedido estÃ¡ no carrinho",
             icon: "success"
         });
 
@@ -302,11 +258,9 @@ $(document).ready(function () {
 
     $("#btnBrasil").click(function () {
 
-        $(".MeuBotao").hide();
-
         Swal.fire({
             title: "O produto foi adicionado ao carrinho!",
-            text: "Seu pedido está no carrinho",
+            text: "Seu pedido estÃ¡ no carrinho",
             icon: "success"
         });
 
@@ -316,11 +270,9 @@ $(document).ready(function () {
 
     $("#btnInfantil").click(function () {
 
-        $(".MeuBotao").hide();
-
         Swal.fire({
             title: "O produto foi adicionado ao carrinho!",
-            text: "Seu pedido está no carrinho",
+            text: "Seu pedido estÃ¡ no carrinho",
             icon: "success"
         });
 
@@ -332,11 +284,9 @@ $(document).ready(function () {
 
     $("#btnJogadora").click(function () {
 
-        $(".MeuBotao").hide();
-
         Swal.fire({
             title: "O produto foi adicionado ao carrinho!",
-            text: "Seu pedido está no carrinho",
+            text: "Seu pedido estÃ¡ no carrinho",
             icon: "success"
         });
 
@@ -346,11 +296,9 @@ $(document).ready(function () {
 
     $("#btnElite").click(function () {
 
-        $(".MeuBotao").hide();
-
         Swal.fire({
             title: "O produto foi adicionado ao carrinho!",
-            text: "Seu pedido está no carrinho",
+            text: "Seu pedido estÃ¡ no carrinho",
             icon: "success"
         });
 
@@ -360,11 +308,9 @@ $(document).ready(function () {
 
     $("#btnPro").click(function () {
 
-        $(".MeuBotao").hide();
-
         Swal.fire({
             title: "O produto foi adicionado ao carrinho!",
-            text: "Seu pedido está no carrinho",
+            text: "Seu pedido estÃ¡ no carrinho",
             icon: "success"
         });
 
@@ -375,11 +321,9 @@ $(document).ready(function () {
 
     $("#btnJordan1").click(function () {
 
-        $(".MeuBotao").hide();
-
         Swal.fire({
             title: "O produto foi adicionado ao carrinho!",
-            text: "Seu pedido está no carrinho",
+            text: "Seu pedido estÃ¡ no carrinho",
             icon: "success"
         });
 
@@ -389,11 +333,9 @@ $(document).ready(function () {
 
     $("#btnUnissex").click(function () {
 
-        $(".MeuBotao").hide();
-
         Swal.fire({
             title: "O produto foi adicionado ao carrinho!",
-            text: "Seu pedido está no carrinho",
+            text: "Seu pedido estÃ¡ no carrinho",
             icon: "success"
         });
 
@@ -403,11 +345,9 @@ $(document).ready(function () {
 
     $("#btncompra").click(function () {
 
-        $(".MeuBotao").hide();
-
         Swal.fire({
             title: "O pedido foi realizado com sucesso!",
-            text: "Em breve chegará em sua residencia!",
+            text: "Em breve chegarÃ¡ em sua residencia!",
             icon: "success"
         });
 
